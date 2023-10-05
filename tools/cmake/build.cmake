@@ -95,7 +95,6 @@ function(__build_set_default_build_specifications)
 
     list(APPEND compile_options     "-ffunction-sections"
                                     "-fdata-sections"
-                                    "-fstrict-volatile-bitfields"
                                     "-nostdlib"
                                     # warning-related flags
                                     "-Wall"

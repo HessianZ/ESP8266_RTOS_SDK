@@ -386,7 +386,6 @@ endif #CONFIG_COMPILER_WARN_WRITE_STRINGS
 COMMON_FLAGS = \
 	-Wno-frame-address \
 	-ffunction-sections -fdata-sections \
-	-fstrict-volatile-bitfields \
 	-mlongcalls \
 	-nostdlib
 
