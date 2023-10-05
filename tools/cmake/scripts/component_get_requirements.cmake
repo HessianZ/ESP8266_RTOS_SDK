@@ -1,6 +1,7 @@
 include("${BUILD_PROPERTIES_FILE}")
 include("${COMPONENT_PROPERTIES_FILE}")
 
+
 function(idf_build_get_property var property)
     cmake_parse_arguments(_ "GENERATOR_EXPRESSION" "" "" ${ARGN})
     if(__GENERATOR_EXPRESSION)
@@ -11,6 +12,7 @@ function(idf_build_get_property var property)
 endfunction()
 
 idf_build_get_property(idf_path IDF_PATH)
+include(${idf_path}/tools/cmake/version.cmake)
 include(${idf_path}/tools/cmake/utilities.cmake)
 
 function(__component_get_property var component_target property)
